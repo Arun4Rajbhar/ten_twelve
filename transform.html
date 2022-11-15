@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            position: relative;
+            top: 100px;
+            left: 200px;
+            animation-name: rot;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+           
+
+        }
+        .col:hover{
+           
+            /* transform: translate(50px, 100px); */
+            /* transform: rotate(-20deg); */
+            /* transform: scale(-2, -3); */
+            /* transform: skewX(120deg); */
+            /* transform: rotateY(60deg); */
+           
+
+        }
+        @keyframes rot {
+            0%{
+                /* transform: rotate(60deg); */
+                background-image: url("img1.jpg");
+                background-size: cover;
+                background-repeat: round;
+            }
+            25%{
+                background-image: url("img2.jpg");
+                background-size: cover;
+                background-repeat: round;
+                /* transform: rotate(1200deg); */
+            }
+            
+            75%{
+                background-image: url("img3.jpg");
+                background-size: cover;
+                background-repeat: round;
+                /* transform: rotate(270deg); */
+            }
+            
+            100%{
+                background-image: url("mobile.jpg");
+                background-size: cover;
+                background-repeat: round;
+                /* transform: rotate(360deg); */
+            }
+            
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="col">transform</div>
+</body>
+
+</html>

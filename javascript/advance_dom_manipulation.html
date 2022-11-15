@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #jak{
+            background-color: aqua;
+        }
+        .col1{
+            background-color: royalblue;
+            font-size: 30px;
+            color: red;
+
+        }
+        .jak1{
+            background-color: green;
+            color: black;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="jak">hello dear boys how  are you</div><br>
+    <div class="jak1">hello kundan</div><br><br><br>
+    <div class="click" onclick="col()">click me</div>
+    <div></div>
+
+    <script>
+        var rami=document.querySelector("div").getAttribute("id");
+        console.log(rami);
+        function col(){
+            // document.getElementsByClassName("jak1")[0].setAttribute("id",rami);
+            var a=document.getElementsByTagName("div");
+            a[3].innerText="hello sunil";
+            a[3].setAttribute("class","col1");
+            
+            document.getElementsByTagName("div")[1].removeAttribute("class");
+
+
+        }
+       
+
+    </script>
+
+    
+</body>
+</html>
